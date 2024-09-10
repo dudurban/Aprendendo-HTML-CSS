@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roladas</title>
+
+    <style>
+      .dice-container {
+          display: flex;
+          justify-content: center;
+      }
+
+      .dice-button {
+          margin: 10px;
+          padding: 10px 20px;
+          background-color: #4CAF50; /* Verde */
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      #resultado {
+          font-size: 24px;
+          font-weight: bold;
+          margin-top: 20px;
+          text-align: center;
+          background-color: #f0f0f0;
+          padding: 10px;
+          border: 1px solid #ccc;
+      }
+  </style>
+</head>
+<body>
+  <HEADEr>
+    <h1>ROLADAS</h1>
+  </HEADEr>
+  <MAIN>
+
+<h2>Teste D&D</h2>
+
+<!-- <div class="dice-container">
+    <button class="dice-button" onclick="rolarDado(4)">d4</button>
+    <button class="dice-button" onclick="rolarDado(6)">d6</button>
+    <button class="dice-button" onclick="rolarDado(8)">d8</button>
+    <button class="dice-button" onclick="rolarDado(10)">d10</button>
+    <button class="dice-button" onclick="rolarDado(12)">d12</button>
+    <button class="dice-button" onclick="rolarDado(20)">d20</button>
+</div>
+
+  <p id="resultado"></p>
+
+  <script>
+    function rolarDado(faces) {
+        const resultado = Math.floor(Math.random() * faces) + 1;
+        document.getElementById("resultado").textContent = resultado;
+    }
+  </script> -->
+  Dungeons & Dragons (D&D) é um dos jogos de RPG (Role-Playing Game) mais famosos e influentes do mundo. Criado na década de 1970, D&D transporta os jogadores para um universo de fantasia medieval, onde eles assumem o papel de heróis que exploram masmorras, enfrentam criaturas míticas e buscam tesouros. A narrativa é construída de forma colaborativa, com um Mestre de Jogo (DM) conduzindo a aventura e os jogadores interpretando seus personagens. D&D oferece uma experiência única, combinando elementos de estratégia, criatividade e interação social, e continua a conquistar novos fãs ao redor do mundo.
+  
+  <section>
+    <input type="text" placeholder="Digite o nome do perosnagem">
+    <button onclick="pesquisar()">Pesquisar</button>
+  </section>
+  <section class="resultados-pesquisa" id="resultados-pesquisa">
+  </section>
+  </MAIN>
+  <footer>
+    <p>2024 - Roladas. Todos os direitos reservados</p>
+    <p>Entre em contato pelo email: urban@roladado.com.br</p>
+  </footer>
+  <script src = "dados.js"></script>
+  <script src = "app.js"></script>
+</body>
+</html>
