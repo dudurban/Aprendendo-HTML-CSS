@@ -1,6 +1,135 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Estiliza o container "bandeja de dados" */
+.dice-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estiliza os botões dos dados */
+.dice-button-d4 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FFA07A; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dice-button-d6 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dice-button-d8 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00CED1; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dice-button-d10 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Amarelo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dice-button-d12 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #9370DB; /* Roxo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dice-button-d20 {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FF4500; /* Vermelho */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estiliza a resposta do resultado */
+#resultado {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo base para o dado */
+.dice-animation {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    animation: none;
+    }
+
+/* Estilos específicos para cada dado */
+.dice-d4 {
+background-color: #FFA07A; /* Laranja */
+}
+
+.dice-d6 {
+background-color: #4CAF50; /* Verde */
+}
+
+.dice-d8 {
+background-color: #00CED1; /* Azul */
+}
+
+.dice-d10 {
+background-color: #FFD700; /* Amarelo */
+}
+
+.dice-d12 {
+background-color: #9370DB; /* Roxo */
+}
+
+.dice-d20 {
+background-color: #FF4500; /* Vermelho */
+}
+
+/* Definindo a animação */
+@keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estiliza do Header */
+header {
+    margin-top: 15%; /* Aumente este valor para ajustar o título mais para baixo */
+    text-align: center;
+}
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
@@ -21,6 +150,15 @@ h1 {
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
+
+/* Estiliza os títulos h2 */
+h2 {
+    font-size: 1.8rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+}
+
 
 /* Estiliza as seções da página */
 section {
